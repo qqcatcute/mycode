@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* 父盒子，居中对齐 */
+  .parent-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* 使父盒子高度充满视口 */
+  }
+
+  /* ul盒子大小为228*216，排列方式 */
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    /* 让li换行 */
+    width: 228px;
+    height: 216px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  /* li 每个大小为114*32 */
+  .box li {
+    width: 114px;
+    height: 32px;
+    margin-bottom: 8px;
+    /* 控制行间距 */
+  }
+
+  /* a标签设置为块级元素，方便设置其子元素 */
+  .box li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+
+  /* img 图片大小30*30 */
+  .box li a img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* text盒子设置文字样式 */
+  .box li a .text {
+    font-size: 14px;
+    color: #333;
+    margin-left: 8px;
+    /* 图片与文字之间的间距 */
+  }
+</style>
+
+<body>
+  <div class="parent-box">
+    <ul class="box">
+      <li>
+        <a href="#">
+          <img src="image1.jpg" alt="image1">
+          <div class="text">文字1</div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="image2.jpg" alt="image2">
+          <div class="text">文字2</div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="image3.jpg" alt="image3">
+          <div class="text">文字3</div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="image4.jpg" alt="image4">
+          <div class="text">文字4</div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="image5.jpg" alt="image5">
+          <div class="text">文字5</div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="image6.jpg" alt="image6">
+          <div class="text">文字6</div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="image7.jpg" alt="image7">
+          <div class="text">文字7</div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="image8.jpg" alt="image8">
+          <div class="text">文字8</div>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</body>
+
+</html>
